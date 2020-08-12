@@ -40,3 +40,4 @@ e.g.)wsl -d docker_settings
 1. docker-composeを生成してダウンロードできること
   - サーバー側でデータを受け取ってdocker-compose,dockerfileを生成し、それをフロントへ送る
   - フロント側はサーバーからもらったデータをユーザーにダウンロードできるようにする
+
