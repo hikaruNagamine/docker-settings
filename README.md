@@ -10,10 +10,10 @@ GUI tool to create docker-compose configuration file
 e.g)wsl --import docker_settings C:\Users\miyagi\AppData\Local\wsl_package\docker_settings .\ubuntu1804-docker-settings.tar --version 2
 事前にwsl_package_dirのフォルダは作成しておくこと
 ```
-1. インポートしたディストリビューションに入る
+3. インポートしたディストリビューションに入る
 ```
 wsl -d ディストリビューション名
 e.g.)wsl -d docker_settings
 ```
 
-1. ./setup.shを実行する
+4. ./setup.shを実行する
