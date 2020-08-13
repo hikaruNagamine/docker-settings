@@ -30,7 +30,8 @@
       <v-content>
         <v-container class="fill-height" fluid>
           <v-layout wrap>
-            <endorcontinue-component></endorcontinue-component>
+            <end-or-continue-component v-if="false" />
+            <choose-action-component v-else />
           </v-layout>
         </v-container>
       </v-content>
@@ -42,8 +43,17 @@
   </v-app>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+import EndOrContinueComponent from "./EndOrContinueComponent.vue";
+import ChooseActionComponent from "./ChooseActionComponent.vue";
+
+export default Vue.extend({
+  name:"MainContentComponent",
+  components: {
+    EndOrContinueComponent,
+    ChooseActionComponent,
+  },
   props: {
     source: String,
   },
@@ -53,5 +63,5 @@ export default {
   mounted() {
     console.log("Component mounted.");
   },
-};
+});
 </script>

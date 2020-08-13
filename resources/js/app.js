@@ -27,7 +27,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 
 Vue.component('main-content-component', require('./components/MainContentComponent.vue').default);
-Vue.component('endorcontinue-component', require('./components/EndOrContinueComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
