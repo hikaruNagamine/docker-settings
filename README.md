@@ -18,7 +18,9 @@ e.g.)wsl -d docker_settings
 
 4. ./setup.shを実行する
 
+### プロトタイプデザイン
 
+[dockerfile](https://www.figma.com/file/k0ngbaX2uCNRmLdRP956tz/dockerlien?node-id=0%3A1)
 
 ### マイルストーン
 
