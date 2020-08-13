@@ -41,3 +41,4 @@ e.g.)wsl -d docker_settings
     - サーバー側でデータを受け取ってdocker-compose,dockerfileを生成し、それをフロントへ送る
     - フロント側はサーバーからもらったデータをユーザーにダウンロードできるようにする
 
+
