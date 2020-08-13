@@ -27,8 +27,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 
 Vue.component('main-content-component', require('./components/MainContentComponent.vue').default);
-Vue.component('header-component', require('./components/HeaderComponent.vue').default);
-Vue.component('side-component', require('./components/SideComponent.vue').default);
 Vue.component('endorcontinue-component', require('./components/EndOrContinueComponent.vue').default);
 
 /**
@@ -40,4 +38,10 @@ Vue.component('endorcontinue-component', require('./components/EndOrContinueComp
 const app = new Vue({
     el: '#app',
     vuetify: new Vuetify(),
+    props: {
+      source: String,
+    },
+    data: () => ({
+      drawer: null,
+    }),
 });
