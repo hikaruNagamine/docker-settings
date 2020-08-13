@@ -25,7 +25,11 @@ Vue.use(Vuetify);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
+
+Vue.component('main-content-component', require('./components/MainContentComponent.vue').default);
 Vue.component('header-component', require('./components/HeaderComponent.vue').default);
+Vue.component('side-component', require('./components/SideComponent.vue').default);
+Vue.component('endorcontinue-component', require('./components/EndOrContinueComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
