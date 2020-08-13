@@ -1916,6 +1916,37 @@ module.exports = {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 
@@ -20280,22 +20311,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "v-layout",
+    { attrs: { wrap: "" } },
+    [
+      _c(
+        "v-btn",
+        { staticClass: "pa-2", attrs: { outlined: "", color: "secondary" } },
+        [_vm._v("End")]
+      ),
+      _vm._v(" "),
+      _c("h1", [_vm._v("　or　")]),
+      _vm._v(" "),
+      _c(
+        "v-btn",
+        { staticClass: "pa-2", attrs: { outlined: "", color: "indigo" } },
+        [_vm._v("Continue")]
+      )
+    ],
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("h1", [_vm._v("This is EndOrContinueComponent!")])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
