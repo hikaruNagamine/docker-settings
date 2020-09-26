@@ -1,6 +1,10 @@
 # docker-settings
 GUI tool to create docker-compose configuration file
 
+## コミュニケーション
+
+[チャット](https://discord.gg/UVJvDN5)
+
 ## セットアップ方法
 
 1. wslイメージを[ダウンロードする](https://www.google.com/url?q=https://drive.google.com/drive/folders/1F3u5j7U9qUmzYZm8SSHcxHDnanI-iRAm&sa=D&source=hangouts&ust=1597329542724000&usg=AFQjCNGQwWmYJl_Wo7WdBFhD8KHqHQPZ7Q)
