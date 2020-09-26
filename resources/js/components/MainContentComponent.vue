@@ -1,25 +1,6 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer v-model="drawer" app>
-      <v-list dense>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-home</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-email</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    <the-side-bar />
 
     <v-app-bar app color="indigo" dark flat>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -47,12 +28,14 @@
 import Vue from "vue";
 import EndOrContinueComponent from "./EndOrContinueComponent.vue";
 import ChooseActionComponent from "./ChooseActionComponent.vue";
+import TheSideBar from "./TheSideBar.vue";
 
 export default Vue.extend({
   name:"MainContentComponent",
   components: {
     EndOrContinueComponent,
     ChooseActionComponent,
+    TheSideBar,
   },
   props: {
     source: String,
