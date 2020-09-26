@@ -3,13 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel Vuetify</title>
+        <title>Docker Settings</title>
     </head>
     <body>
         <div id="app">
-            <header-component></header-component>
-            <example-component></example-component>
+            <main-content-component></main-content-component>
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
     </body>

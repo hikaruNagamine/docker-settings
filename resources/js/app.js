@@ -8,7 +8,8 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-import Vuetify from 'vuetify';
+import Vuetify from 'vuetify'
+import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/dist/vuetify.min.css';
 Vue.use(Vuetify);
 
@@ -25,7 +26,8 @@ Vue.use(Vuetify);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
-Vue.component('header-component', require('./components/HeaderComponent.vue').default);
+
+Vue.component('main-content-component', require('./components/MainContentComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -35,5 +37,15 @@ Vue.component('header-component', require('./components/HeaderComponent.vue').de
 
 const app = new Vue({
     el: '#app',
-    vuetify: new Vuetify(),
+    vuetify: new Vuetify({
+      icons: {
+        iconfont: 'mdi', // default - only for display purposes
+      },
+    }),
+    props: {
+      source: String,
+    },
+    data: () => ({
+      drawer: null,
+    }),
 });
