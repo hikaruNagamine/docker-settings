@@ -1,8 +1,28 @@
 <template>
   <v-content>
     <h2 class="action_title">Choose Action</h2>
-    <card-copy-action />
-    <card-run-action />
+    <v-row>
+      <v-col lg="3">
+        <card-copy-action />
+      </v-col>
+      <v-col lg="3">
+        <card-run-action />
+      </v-col>
+      <v-col lg="3">
+        <card-run-action />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col lg="3">
+        <card-copy-action />
+      </v-col>
+      <v-col lg="3">
+        <card-run-action />
+      </v-col>
+      <v-col lg="3">
+        <card-run-action />
+      </v-col>
+    </v-row>
   </v-content>
 </template>
 
@@ -18,11 +38,16 @@ export default Vue.extend({
     CardCopyAction,
     CardRunAction,
   },
+  data: function() {
+    return {
+
+    }
+  }
 });
 </script>
 
 <style scoped>
 .action_title {
-  text-align: center;
+  /* text-align: center; */
 }
 </style>

@@ -1,7 +1,8 @@
 <template>
-  <v-content>
+  <div>
+    <v-icon x-large>mdi-home</v-icon>
     <h2 class="action_title">CARD : Copy Action</h2>
-  </v-content>
+  </div>
 </template>
 
 <script lang="ts">
