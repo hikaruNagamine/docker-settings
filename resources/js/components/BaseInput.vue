@@ -5,7 +5,10 @@
         <h2>
           {{title}}
         </h2>
-        <base-input-field :labelName="inputLabelName" />
+        <base-input-field 
+          :labelName="inputLabelName"
+          v-model="value"
+          @change="onChange"/>
       </v-row>
     </v-row>
   </v-container>
@@ -18,16 +21,34 @@ import BaseInputField from "./BaseInputField.vue";
 export default Vue.extend({
   name: "BaseInput",
   props:{
+    inputText: String,
     title: String,
     inputLabelName: String
+  },
+  model: {
+    prop: 'inputText',
+    event: 'valueChange'
   },
   components:{
     BaseInputField
   },
-  // data() {
-  //   return {
-  //     title:"aiue"
+  data() {
+    return {
+      value:""
+    }
+  },
+  // watch: {
+  //   value(){
+  //     console.log('this.value',this.value);
+  //     this.$emit('valueChange', this.value);
   //   }
   // },
+  methods: {
+    onChange(){
+      // console.log('this.value',this.value);
+      // this.$emit('valueChange', this.value);
+      this.$emit('change',this.value);
+    }
+  },
 });
 </script>

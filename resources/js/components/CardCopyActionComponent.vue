@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click='onClick'>
     <v-icon x-large>mdi-home</v-icon>
     <h2 class="action_title">CARD : Copy Action</h2>
   </div>
@@ -10,6 +10,11 @@ import Vue from "vue";
 
 export default Vue.extend({
   name:"CardCopyAction",
+  methods: {
+    onClick(){
+      this.$emit('change');
+    }
+  },
 });
 </script>
 

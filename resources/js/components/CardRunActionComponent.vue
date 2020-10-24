@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click="clickEvent">
     <v-icon x-large>mdi-home</v-icon>
     <h2 class="action_title">CARD : Run Action</h2>
   </div>
@@ -10,6 +10,11 @@ import Vue from "vue";
 
 export default Vue.extend({
   name:"CardRunAction",
+  methods: {
+    clickEvent: function() {
+      this.$emit('copyMove');
+    }
+  }
 });
 </script>
 

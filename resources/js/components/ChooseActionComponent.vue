@@ -3,11 +3,12 @@
     <h2 class="action_title">Choose Action</h2>
     <v-row>
       <v-col lg="3">
-        <card-copy-action />
+        <card-copy-action @change='change'/>
       </v-col>
       <v-col lg="3">
-        <card-run-action />
+        <card-run-action @copyMove="copyMove" />
       </v-col>
+      <!--
       <v-col lg="3">
         <card-run-action />
       </v-col>
@@ -22,6 +23,7 @@
       <v-col lg="3">
         <card-run-action />
       </v-col>
+      -->
     </v-row>
   </v-content>
 </template>
@@ -37,6 +39,14 @@ export default Vue.extend({
   components: {
     CardCopyAction,
     CardRunAction,
+  },
+  methods: {
+    change(){
+      this.$emit('change');
+    },
+    copyMove() {
+      this.$emit('copyMove');
+    }
   },
   data: function() {
     return {
